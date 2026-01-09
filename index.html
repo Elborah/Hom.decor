@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Decor</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* NAV */
+    header {
+      background: linear-gradient(90deg, #ff6f61, #ffb347);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+      ),
+      url("https://images.unsplash.com/photo-1505691938895-1758d7feb511") center/cover no-repeat;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #ff6f61;
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ff6f61;
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      gap: 2rem;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .product {
+      background: #fef0e7;
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .product h4 {
+      margin-bottom: 0.5rem;
+      color: #ff6f61;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(90deg, #ffb347, #ff6f61);
+      border-radius: 20px;
+      color: #fff;
+      padding: 3rem 1.5rem;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      background: #fff;
+      color: #ff6f61;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+      font-size: 0.8rem;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .hero h2 {
+        font-size: 3.5rem;
+      }
+
+      .about {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+
+      .products {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>Bloom Decor</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Brighten Your Home</h2>
+    <p>Colorful, modern, and elegant decor pieces designed to transform your space.</p>
+    <a href="#products" class="btn">Shop Collection</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <h3>About Us</h3>
+    <p>
+      Bloom Decor brings life and color into your home. From modern furniture to
+      handcrafted accessories, we design pieces that make every space feel warm,
+      stylish, and unique.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2a7f" style="width:100%; border-radius:15px;">
+</section>
+
+<section id="products">
+  <h3>Our Products</h3>
+  <div class="products">
+    <div class="product">
+      <h4>Wall Art</h4>
+      <p>Bold colors and creative designs.</p>
+    </div>
+    <div class="product">
+      <h4>Furniture</h4>
+      <p>Comfort meets modern aesthetics.</p>
+    </div>
+    <div class="product">
+      <h4>Lighting</h4>
+      <p>Bright ideas for cozy spaces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h3>Gallery</h3>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36">
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+    <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4">
+    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2a7f">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact Us</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Bloom Decor. All rights reserved.
+</footer>
+
+</body>
+</html>
